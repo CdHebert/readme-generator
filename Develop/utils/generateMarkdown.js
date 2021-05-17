@@ -1,59 +1,5 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-<<<<<<< HEAD
-const renderLicenseBadge = (license) => {
-<<<<<<< HEAD
-  let badge = ''
-=======
-  if (!license) {
-    return '';
-  }
- 
->>>>>>> feature/write-file
-
-  if (license === 'MIT'){
-    badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
-  } else if (license === 'GNU'){
-    badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
-  } else if (license === 'Apache'){
-    badge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
-  } else if (license === 'ISC') {
-    badge = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
-  } else {
-  } else if (license === 'ISC') {
-    badge = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
-  } else {
-  } else if (license === 'ISC') {
-    badge = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
-  } else {
-    badge = '';
-  }
-  return badge
-},
-}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-const renderLicenseLink = (license) => {
-  if (!license) {
-    return '';
-  }
-  return `
-  ${license}
-  `
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-const renderLicenseSection = (license) => {
-  if (!license) {
-    return '';
-  }
-  return `
-  ${license}
-  `
-}
-=======
 const generatePage = {
   renderLicenseBadge: function (license) {
 
@@ -87,12 +33,9 @@ const generatePage = {
 
   // TODO: Create a function to generate markdown for README
   generateMarkdown: function (data) {
-    console.log(data.projectUsage);
     return `
 
 # ${data.project}
-
-${this.renderLicenseBadge(data.license)}
 
 ## Description
 
@@ -101,11 +44,11 @@ ${data.description}
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
 - [Contributing](#contributing)
 - [Tests](#test)
+- [Links](#links)
 - [Questions](#questions)
+- [License](#license)
 
 ## Installation
 
@@ -119,18 +62,24 @@ ${data.contributing}
 
 ${data.test}
 
+## Links
+
+${data.link}
+
 ## Questions
 
-If you have any questions feel free to either email me the question or create an issue on the Github Repo:
-
-- [Project Github Repo](https://github.com/${data.github}/${data.project})
+If you have any questions feel free to either email me the question:
 
 - My email: ${data.email}
->>>>>>> feature/license
 
 ## License
 
-This project is using the ${data.license} license. Click the badge at the top of the page to go to that license documentation.
+${this.renderLicenseBadge(data.license)}
+
+## Author
+
+${data.author}
+
 `;
   }
 }
