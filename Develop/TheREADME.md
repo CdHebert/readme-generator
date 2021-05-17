@@ -4,7 +4,7 @@
 
 ## Description
 
-CryptoKnight is a CryptoCurrency watcher
+this is a project that helps watch crypto currency that you are interested in
 
 ## Table of Contents
 
@@ -17,19 +17,19 @@ CryptoKnight is a CryptoCurrency watcher
 
 ## Installation
 
-There are no intallations needed fro this project to function
+none
 
 ## Contributing
 
-Pull requests are always welcome. If you would like to make changes please open an issue first.
+anyone can contribute to this project
 
 ## Tests
 
-go to the github link and try it out
+NA
 
 ## Links
 
-https://noreaster24.github.io/team-project-1/
+here is the link
 
 ## Questions
 
@@ -40,3 +40,8 @@ If you have any questions feel free to either email me the question:
 ## License
 
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+
+## Author
+
+Cody Hebert
+
