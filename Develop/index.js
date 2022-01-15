@@ -156,7 +156,7 @@ const init = () => {
                console.log('Something went wrong!');
             };
 
-            const data = generate.generateMarkdown(answers)
+            const data = generate(answers)
 
             writeToFile(data);
         });
